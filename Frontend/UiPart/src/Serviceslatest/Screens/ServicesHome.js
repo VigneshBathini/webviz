@@ -10,7 +10,6 @@ import webIcon from '../../Assets/webIcon.png';
 const ServicesHome = () => {
   const navigate = useNavigate();
 
-  // Map service names to card data (ensures consistency with ServicesPageN tabs)
   const services = [
     { name: 'ERP Implementations', icon: erpIcon, alt: 'ERP Implementations' },
     { name: 'Application Integration Services', icon: applicationIcon, alt: 'Application Integration Services' },
@@ -57,7 +56,7 @@ const ServicesHome = () => {
                 style={{ cursor: 'pointer' }}
               >
                 <div id={styles.imgContainer}>
-                  <img src={service.icon} alt={service.alt} width={80} height={80} />
+                  <img src={service.icon} alt={service.alt}  />
                 </div>
                 <h6>{service.name}</h6>
               </div>
